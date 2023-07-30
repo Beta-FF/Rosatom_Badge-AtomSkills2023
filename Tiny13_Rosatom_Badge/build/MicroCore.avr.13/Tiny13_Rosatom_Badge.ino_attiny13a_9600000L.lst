@@ -1,0 +1,1076 @@
+
+C:\Users\Beta\AppData\Local\Temp\arduino\sketches\3B66047C9F0810C340510FBECD323BC7/Tiny13_Rosatom_Badge.ino.elf:     file format elf32-avr
+
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+__vectors():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:20
+  .endm
+
+  .section .vectors
+  .global __vectors
+__vectors:
+  rjmp __init
+   0:	0a c0       	rjmp	.+20     	; 0x16 <__ctors_end>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:21
+  vector __vector_1
+   2:	08 c0       	rjmp	.+16     	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:22
+  vector __vector_2
+   4:	07 c0       	rjmp	.+14     	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:23
+  vector __vector_3
+   6:	06 c0       	rjmp	.+12     	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:24
+  vector __vector_4
+   8:	05 c0       	rjmp	.+10     	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:25
+  vector __vector_5
+   a:	04 c0       	rjmp	.+8      	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:26
+  vector __vector_6
+   c:	03 c0       	rjmp	.+6      	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:27
+  vector __vector_7
+   e:	02 c0       	rjmp	.+4      	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:28
+  vector __vector_8
+  10:	01 c0       	rjmp	.+2      	; 0x14 <__empty_interrupt>
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:29
+  vector __vector_9
+  12:	00 c0       	rjmp	.+0      	; 0x14 <__empty_interrupt>
+
+00000014 <__empty_interrupt>:
+__vector_1():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:44
+  vector __vector_19
+
+  ;.text
+  .global __empty_interrupt
+__empty_interrupt:
+  reti
+  14:	18 95       	reti
+
+00000016 <__ctors_end>:
+__init():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/pcrt.S:50
+
+    .section .init0
+__init:
+
+    .section .init2
+    clr r1
+  16:	11 24       	eor	r1, r1
+
+00000018 <__do_copy_data>:
+__do_copy_data():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2409
+  18:	10 e0       	ldi	r17, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2410
+  1a:	a0 e6       	ldi	r26, 0x60	; 96
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2411
+  1c:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2412
+  1e:	ee ee       	ldi	r30, 0xEE	; 238
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2413
+  20:	f3 e0       	ldi	r31, 0x03	; 3
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2414
+  22:	02 c0       	rjmp	.+4      	; 0x28 <__do_copy_data+0x10>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2417
+  24:	05 90       	lpm	r0, Z+
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2422
+  26:	0d 92       	st	X+, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2424
+  28:	a4 36       	cpi	r26, 0x64	; 100
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2425
+  2a:	b1 07       	cpc	r27, r17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2426
+  2c:	d9 f7       	brne	.-10     	; 0x24 <__do_copy_data+0xc>
+
+0000002e <__do_clear_bss>:
+__do_clear_bss():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2441
+  2e:	20 e0       	ldi	r18, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2442
+  30:	a4 e6       	ldi	r26, 0x64	; 100
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2443
+  32:	b0 e0       	ldi	r27, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2444
+  34:	01 c0       	rjmp	.+2      	; 0x38 <.do_clear_bss_start>
+
+00000036 <.do_clear_bss_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2446
+  36:	1d 92       	st	X+, r1
+
+00000038 <.do_clear_bss_start>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2448
+  38:	ae 37       	cpi	r26, 0x7E	; 126
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2449
+  3a:	b2 07       	cpc	r27, r18
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:2450
+  3c:	e1 f7       	brne	.-8      	; 0x36 <.do_clear_bss_loop>
+
+0000003e <main>:
+main():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring.c:63
+ * @brief Initializing function that runs before setup().
+ */
+void init()
+{
+  // Turn on global interrupts
+  sei();
+  3e:	78 94       	sei
+pinMode():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:27
+ *        INPUT_PULLUP - set pin as input and enable internal pullup resistor
+ */
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if(mode == OUTPUT) // Pin as output
+    DDRB |= _BV(pin);
+  40:	bc 9a       	sbi	0x17, 4	; 23
+digitalWrite():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:49
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  else
+    PORTB &= ~_BV(pin); // Set pin low
+  42:	c4 98       	cbi	0x18, 4	; 24
+pinMode():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:31
+  if(mode == OUTPUT) // Pin as output
+    DDRB |= _BV(pin);
+
+  else // Pin as input or input pullup
+  {
+    DDRB &= ~_BV(pin); // Set pin as input
+  44:	b8 98       	cbi	0x17, 0	; 23
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:33
+    if(mode == INPUT_PULLUP)
+      PORTB |= _BV(pin); // Enable pullup resistors
+  46:	c0 9a       	sbi	0x18, 0	; 24
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:27
+ *        INPUT_PULLUP - set pin as input and enable internal pullup resistor
+ */
+void pinMode(uint8_t pin, uint8_t mode)
+{
+  if(mode == OUTPUT) // Pin as output
+    DDRB |= _BV(pin);
+  48:	bb 9a       	sbi	0x17, 3	; 23
+button_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:133
+        if(btn_old == PRESS) {
+            if(btn_hold >= 10) ;//button_hold();
+            else button_release();
+            btn_hold = 0;
+        }
+        btn_old = NOT_PRESS;
+  4a:	01 e0       	ldi	r16, 0x01	; 1
+set_dot_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:43
+    ws2812b_send_color_no_reset(pin_value, red, green, blue);
+}
+
+void set_dot_ws2812(uint8_t position, uint8_t col_r, uint8_t col_g, uint8_t col_b) {
+  if(position < NUMLEDS) {
+        led_color[position * 3] = col_r;
+  4c:	17 e0       	ldi	r17, 0x07	; 7
+Wheel():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:168
+     led_color[n * 3 + 2] = MAX_BRIGHT * (WheelPos * 3) / 255;
+  } 
+  else {
+     WheelPos -= 170;
+     led_color[n * 3] = 0;
+     led_color[n * 3 + 1] = MAX_BRIGHT * (WheelPos * 3) / 255;
+  4e:	cf ef       	ldi	r28, 0xFF	; 255
+  50:	d0 e0       	ldi	r29, 0x00	; 0
+button_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:122
+void button_hold() {
+    digitalWrite(MOSFET_PIN, HIGH);
+}
+
+void button_handler() {
+    if(digitalRead(BTN_PIN) == PRESS) {
+  52:	b0 99       	sbic	0x16, 0	; 22
+  54:	0b c0       	rjmp	.+22     	; 0x6c <__SREG__+0x2d>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:124
+        if(btn_old == NOT_PRESS) button_press();
+        btn_hold++;
+  56:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__data_end>
+  5a:	8f 5f       	subi	r24, 0xFF	; 255
+  5c:	80 93 64 00 	sts	0x0064, r24	; 0x800064 <__data_end>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:125
+        if(btn_hold >= 10) button_hold();
+  60:	8a 30       	cpi	r24, 0x0A	; 10
+  62:	08 f0       	brcs	.+2      	; 0x66 <__SREG__+0x27>
+digitalWrite():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring_digital.c:47
+ * @param val The state to set. Valid options are HIGH or LOW
+ */
+void digitalWrite(uint8_t pin, uint8_t val)
+{
+  if(val)
+    PORTB |= _BV(pin);  // Set pin high
+  64:	c4 9a       	sbi	0x18, 4	; 24
+button_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:126
+        btn_old = PRESS;
+  66:	10 92 60 00 	sts	0x0060, r1	; 0x800060 <__data_start>
+  6a:	16 c0       	rjmp	.+44     	; 0x98 <__SREG__+0x59>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:128
+    } else {
+        if(btn_old == PRESS) {
+  6c:	80 91 60 00 	lds	r24, 0x0060	; 0x800060 <__data_start>
+  70:	81 11       	cpse	r24, r1
+  72:	10 c0       	rjmp	.+32     	; 0x94 <__SREG__+0x55>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:129
+            if(btn_hold >= 10) ;//button_hold();
+  74:	80 91 64 00 	lds	r24, 0x0064	; 0x800064 <__data_end>
+  78:	8a 30       	cpi	r24, 0x0A	; 10
+  7a:	50 f4       	brcc	.+20     	; 0x90 <__SREG__+0x51>
+button_release():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:114
+void button_press() {
+
+}
+
+void button_release() {
+    if(++mode > 3) mode = 0;
+  7c:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <mode>
+  80:	8f 5f       	subi	r24, 0xFF	; 255
+  82:	84 30       	cpi	r24, 0x04	; 4
+  84:	18 f4       	brcc	.+6      	; 0x8c <__SREG__+0x4d>
+  86:	80 93 68 00 	sts	0x0068, r24	; 0x800068 <mode>
+  8a:	02 c0       	rjmp	.+4      	; 0x90 <__SREG__+0x51>
+  8c:	10 92 68 00 	sts	0x0068, r1	; 0x800068 <mode>
+button_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:131
+        btn_old = PRESS;
+    } else {
+        if(btn_old == PRESS) {
+            if(btn_hold >= 10) ;//button_hold();
+            else button_release();
+            btn_hold = 0;
+  90:	10 92 64 00 	sts	0x0064, r1	; 0x800064 <__data_end>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:133
+        }
+        btn_old = NOT_PRESS;
+  94:	00 93 60 00 	sts	0x0060, r16	; 0x800060 <__data_start>
+mode_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:65
+        ws2812b_send_color_no_reset(STRIP_PIN, led_color[i * 3], led_color[(i * 3) + 1], led_color[(i * 3) + 2]);
+    }
+}
+
+void mode_handler() {
+    switch (mode) {
+  98:	80 91 68 00 	lds	r24, 0x0068	; 0x800068 <mode>
+  9c:	81 30       	cpi	r24, 0x01	; 1
+  9e:	49 f1       	breq	.+82     	; 0xf2 <__SREG__+0xb3>
+  a0:	38 f0       	brcs	.+14     	; 0xb0 <__SREG__+0x71>
+  a2:	82 30       	cpi	r24, 0x02	; 2
+  a4:	09 f4       	brne	.+2      	; 0xa8 <__SREG__+0x69>
+  a6:	68 c0       	rjmp	.+208    	; 0x178 <__SREG__+0x139>
+  a8:	83 30       	cpi	r24, 0x03	; 3
+  aa:	09 f4       	brne	.+2      	; 0xae <__SREG__+0x6f>
+  ac:	6a c0       	rjmp	.+212    	; 0x182 <__SREG__+0x143>
+  ae:	c7 c0       	rjmp	.+398    	; 0x23e <__SREG__+0x1ff>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:67
+        case 0:
+            set_full_ws2812(((dynamic_color >> 1) - (MAX_BRIGHT / 2)) * 2, (dynamic_color >> 1), MAX_BRIGHT);
+  b0:	f0 90 62 00 	lds	r15, 0x0062	; 0x800062 <dynamic_color>
+  b4:	6f 2d       	mov	r22, r15
+  b6:	70 e0       	ldi	r23, 0x00	; 0
+  b8:	75 95       	asr	r23
+  ba:	67 95       	ror	r22
+  bc:	cb 01       	movw	r24, r22
+  be:	05 97       	sbiw	r24, 0x05	; 5
+  c0:	4a e0       	ldi	r20, 0x0A	; 10
+  c2:	88 0f       	add	r24, r24
+  c4:	51 d1       	rcall	.+674    	; 0x368 <set_full_ws2812(unsigned char, unsigned char, unsigned char)>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:68
+            if(inc) dynamic_color++;
+  c6:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <inc>
+  ca:	88 23       	and	r24, r24
+  cc:	11 f0       	breq	.+4      	; 0xd2 <__SREG__+0x93>
+  ce:	f3 94       	inc	r15
+  d0:	01 c0       	rjmp	.+2      	; 0xd4 <__SREG__+0x95>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:69
+            else dynamic_color--;
+  d2:	fa 94       	dec	r15
+  d4:	f0 92 62 00 	sts	0x0062, r15	; 0x800062 <dynamic_color>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:70
+            if(dynamic_color >= MAX_BRIGHT * 2) inc = false;
+  d8:	80 91 62 00 	lds	r24, 0x0062	; 0x800062 <dynamic_color>
+  dc:	84 31       	cpi	r24, 0x14	; 20
+  de:	18 f0       	brcs	.+6      	; 0xe6 <__SREG__+0xa7>
+  e0:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <inc>
+  e4:	ac c0       	rjmp	.+344    	; 0x23e <__SREG__+0x1ff>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:71
+            if(dynamic_color <= MAX_BRIGHT)  inc = true;
+  e6:	8b 30       	cpi	r24, 0x0B	; 11
+  e8:	08 f0       	brcs	.+2      	; 0xec <__SREG__+0xad>
+  ea:	a9 c0       	rjmp	.+338    	; 0x23e <__SREG__+0x1ff>
+  ec:	00 93 61 00 	sts	0x0061, r16	; 0x800061 <inc>
+  f0:	a6 c0       	rjmp	.+332    	; 0x23e <__SREG__+0x1ff>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:74
+            break;
+        case 1:
+            set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+  f2:	4a e0       	ldi	r20, 0x0A	; 10
+  f4:	65 e0       	ldi	r22, 0x05	; 5
+  f6:	80 e0       	ldi	r24, 0x00	; 0
+  f8:	37 d1       	rcall	.+622    	; 0x368 <set_full_ws2812(unsigned char, unsigned char, unsigned char)>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:75
+            set_dot_ws2812(dot_cnt, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+  fa:	20 91 67 00 	lds	r18, 0x0067	; 0x800067 <dot_cnt>
+set_dot_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:42
+    _delay_us(50);
+    ws2812b_send_color_no_reset(pin_value, red, green, blue);
+}
+
+void set_dot_ws2812(uint8_t position, uint8_t col_r, uint8_t col_g, uint8_t col_b) {
+  if(position < NUMLEDS) {
+  fe:	28 30       	cpi	r18, 0x08	; 8
+ 100:	58 f4       	brcc	.+22     	; 0x118 <__SREG__+0xd9>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:43
+        led_color[position * 3] = col_r;
+ 102:	82 2f       	mov	r24, r18
+ 104:	90 e0       	ldi	r25, 0x00	; 0
+ 106:	63 e0       	ldi	r22, 0x03	; 3
+ 108:	70 e0       	ldi	r23, 0x00	; 0
+ 10a:	39 d1       	rcall	.+626    	; 0x37e <__mulhi3>
+ 10c:	fc 01       	movw	r30, r24
+ 10e:	e7 59       	subi	r30, 0x97	; 151
+ 110:	ff 4f       	sbci	r31, 0xFF	; 255
+ 112:	10 83       	st	Z, r17
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:44
+        led_color[(position * 3) + 1] = col_g;
+ 114:	11 83       	std	Z+1, r17	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:45
+        led_color[(position * 3) + 2] = col_b;
+ 116:	12 83       	std	Z+2, r17	; 0x02
+mode_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:76
+            if(dynamic_color <= MAX_BRIGHT)  inc = true;
+            break;
+        case 1:
+            set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+            set_dot_ws2812(dot_cnt, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+            set_dot_ws2812(dot_cnt + 1, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+ 118:	31 e0       	ldi	r19, 0x01	; 1
+ 11a:	32 0f       	add	r19, r18
+set_dot_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:42
+    _delay_us(50);
+    ws2812b_send_color_no_reset(pin_value, red, green, blue);
+}
+
+void set_dot_ws2812(uint8_t position, uint8_t col_r, uint8_t col_g, uint8_t col_b) {
+  if(position < NUMLEDS) {
+ 11c:	38 30       	cpi	r19, 0x08	; 8
+ 11e:	58 f4       	brcc	.+22     	; 0x136 <__SREG__+0xf7>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:43
+        led_color[position * 3] = col_r;
+ 120:	83 2f       	mov	r24, r19
+ 122:	90 e0       	ldi	r25, 0x00	; 0
+ 124:	63 e0       	ldi	r22, 0x03	; 3
+ 126:	70 e0       	ldi	r23, 0x00	; 0
+ 128:	2a d1       	rcall	.+596    	; 0x37e <__mulhi3>
+ 12a:	fc 01       	movw	r30, r24
+ 12c:	e7 59       	subi	r30, 0x97	; 151
+ 12e:	ff 4f       	sbci	r31, 0xFF	; 255
+ 130:	10 83       	st	Z, r17
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:44
+        led_color[(position * 3) + 1] = col_g;
+ 132:	11 83       	std	Z+1, r17	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:45
+        led_color[(position * 3) + 2] = col_b;
+ 134:	12 83       	std	Z+2, r17	; 0x02
+mode_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:77
+            break;
+        case 1:
+            set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+            set_dot_ws2812(dot_cnt, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+            set_dot_ws2812(dot_cnt + 1, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+            if(timer_cnt == 0) {
+ 136:	80 91 66 00 	lds	r24, 0x0066	; 0x800066 <timer_cnt>
+ 13a:	81 11       	cpse	r24, r1
+ 13c:	19 c0       	rjmp	.+50     	; 0x170 <__SREG__+0x131>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:78
+                if(inc) dot_cnt++;
+ 13e:	80 91 61 00 	lds	r24, 0x0061	; 0x800061 <inc>
+ 142:	88 23       	and	r24, r24
+ 144:	19 f0       	breq	.+6      	; 0x14c <__SREG__+0x10d>
+ 146:	30 93 67 00 	sts	0x0067, r19	; 0x800067 <dot_cnt>
+ 14a:	05 c0       	rjmp	.+10     	; 0x156 <__SREG__+0x117>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:80
+                else {
+                    if(dot_cnt > 0) dot_cnt--;
+ 14c:	22 23       	and	r18, r18
+ 14e:	19 f0       	breq	.+6      	; 0x156 <__SREG__+0x117>
+ 150:	21 50       	subi	r18, 0x01	; 1
+ 152:	20 93 67 00 	sts	0x0067, r18	; 0x800067 <dot_cnt>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:82
+                }
+                if(dot_cnt >= NUMLEDS - 2) {
+ 156:	80 91 67 00 	lds	r24, 0x0067	; 0x800067 <dot_cnt>
+ 15a:	86 30       	cpi	r24, 0x06	; 6
+ 15c:	18 f0       	brcs	.+6      	; 0x164 <__SREG__+0x125>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:83
+                    inc = false;
+ 15e:	10 92 61 00 	sts	0x0061, r1	; 0x800061 <inc>
+ 162:	04 c0       	rjmp	.+8      	; 0x16c <__SREG__+0x12d>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:86
+                    timer_cnt = 5;
+                }
+                if(dot_cnt == 0)  {
+ 164:	81 11       	cpse	r24, r1
+ 166:	6b c0       	rjmp	.+214    	; 0x23e <__SREG__+0x1ff>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:87
+                    inc = true;
+ 168:	00 93 61 00 	sts	0x0061, r16	; 0x800061 <inc>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:88
+                    timer_cnt = 5;
+ 16c:	85 e0       	ldi	r24, 0x05	; 5
+ 16e:	01 c0       	rjmp	.+2      	; 0x172 <__SREG__+0x133>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:91
+                }
+            }
+            else timer_cnt--;
+ 170:	81 50       	subi	r24, 0x01	; 1
+ 172:	80 93 66 00 	sts	0x0066, r24	; 0x800066 <timer_cnt>
+ 176:	63 c0       	rjmp	.+198    	; 0x23e <__SREG__+0x1ff>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:94
+            break;
+        case 2:
+            set_full_ws2812(MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7, MAX_BRIGHT * 0.7);
+ 178:	47 e0       	ldi	r20, 0x07	; 7
+ 17a:	67 e0       	ldi	r22, 0x07	; 7
+ 17c:	87 e0       	ldi	r24, 0x07	; 7
+ 17e:	f4 d0       	rcall	.+488    	; 0x368 <set_full_ws2812(unsigned char, unsigned char, unsigned char)>
+ 180:	5e c0       	rjmp	.+188    	; 0x23e <__SREG__+0x1ff>
+ 182:	e9 e6       	ldi	r30, 0x69	; 105
+ 184:	f0 e0       	ldi	r31, 0x00	; 0
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:65
+        ws2812b_send_color_no_reset(STRIP_PIN, led_color[i * 3], led_color[(i * 3) + 1], led_color[(i * 3) + 2]);
+    }
+}
+
+void mode_handler() {
+    switch (mode) {
+ 186:	40 e0       	ldi	r20, 0x00	; 0
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:101
+        // case 3:
+        //     set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+        //     break;
+        case 3:
+            for(int i=0; i< NUMLEDS; i++ ){
+                Wheel(color + i*STEP1, i );    
+ 188:	f0 90 65 00 	lds	r15, 0x0065	; 0x800065 <color>
+ 18c:	2f 2d       	mov	r18, r15
+ 18e:	24 0f       	add	r18, r20
+Wheel():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:154
+}
+
+// Input a value 0 to 255 to get a color value.
+// The colours are a transition r - g - b - back to r.
+void Wheel(byte WheelPos,uint8_t n) {
+  if(WheelPos < 85) {
+ 190:	25 35       	cpi	r18, 0x55	; 85
+ 192:	b0 f4       	brcc	.+44     	; 0x1c0 <__SREG__+0x181>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:155
+     led_color[n * 3] = MAX_BRIGHT * (WheelPos * 3) / 255;
+ 194:	30 e0       	ldi	r19, 0x00	; 0
+ 196:	c9 01       	movw	r24, r18
+ 198:	6e e1       	ldi	r22, 0x1E	; 30
+ 19a:	70 e0       	ldi	r23, 0x00	; 0
+ 19c:	f0 d0       	rcall	.+480    	; 0x37e <__mulhi3>
+ 19e:	be 01       	movw	r22, r28
+ 1a0:	ff d0       	rcall	.+510    	; 0x3a0 <__divmodhi4>
+ 1a2:	60 83       	st	Z, r22
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:156
+     led_color[n * 3 + 1] = MAX_BRIGHT * (255 - WheelPos * 3) / 255;
+ 1a4:	c9 01       	movw	r24, r18
+ 1a6:	6d ef       	ldi	r22, 0xFD	; 253
+ 1a8:	7f ef       	ldi	r23, 0xFF	; 255
+ 1aa:	e9 d0       	rcall	.+466    	; 0x37e <__mulhi3>
+ 1ac:	81 50       	subi	r24, 0x01	; 1
+ 1ae:	9f 4f       	sbci	r25, 0xFF	; 255
+ 1b0:	6a e0       	ldi	r22, 0x0A	; 10
+ 1b2:	70 e0       	ldi	r23, 0x00	; 0
+ 1b4:	e4 d0       	rcall	.+456    	; 0x37e <__mulhi3>
+ 1b6:	be 01       	movw	r22, r28
+ 1b8:	f3 d0       	rcall	.+486    	; 0x3a0 <__divmodhi4>
+ 1ba:	61 83       	std	Z+1, r22	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:157
+     led_color[n * 3 + 2] = 0;
+ 1bc:	12 82       	std	Z+2, r1	; 0x02
+ 1be:	2b c0       	rjmp	.+86     	; 0x216 <__SREG__+0x1d7>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:159
+  } 
+  else if(WheelPos < 170) {
+ 1c0:	2a 3a       	cpi	r18, 0xAA	; 170
+ 1c2:	98 f4       	brcc	.+38     	; 0x1ea <__SREG__+0x1ab>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:160
+     WheelPos -= 85;
+ 1c4:	25 55       	subi	r18, 0x55	; 85
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:161
+     led_color[n * 3] = MAX_BRIGHT * (255 - WheelPos * 3) / 255;
+ 1c6:	30 e0       	ldi	r19, 0x00	; 0
+ 1c8:	c9 01       	movw	r24, r18
+ 1ca:	6d ef       	ldi	r22, 0xFD	; 253
+ 1cc:	7f ef       	ldi	r23, 0xFF	; 255
+ 1ce:	d7 d0       	rcall	.+430    	; 0x37e <__mulhi3>
+ 1d0:	81 50       	subi	r24, 0x01	; 1
+ 1d2:	9f 4f       	sbci	r25, 0xFF	; 255
+ 1d4:	6a e0       	ldi	r22, 0x0A	; 10
+ 1d6:	70 e0       	ldi	r23, 0x00	; 0
+ 1d8:	d2 d0       	rcall	.+420    	; 0x37e <__mulhi3>
+ 1da:	be 01       	movw	r22, r28
+ 1dc:	e1 d0       	rcall	.+450    	; 0x3a0 <__divmodhi4>
+ 1de:	60 83       	st	Z, r22
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:162
+     led_color[n * 3 + 1] = 0;
+ 1e0:	11 82       	std	Z+1, r1	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:163
+     led_color[n * 3 + 2] = MAX_BRIGHT * (WheelPos * 3) / 255;
+ 1e2:	c9 01       	movw	r24, r18
+ 1e4:	6e e1       	ldi	r22, 0x1E	; 30
+ 1e6:	70 e0       	ldi	r23, 0x00	; 0
+ 1e8:	12 c0       	rjmp	.+36     	; 0x20e <__SREG__+0x1cf>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:167
+  } 
+  else {
+     WheelPos -= 170;
+     led_color[n * 3] = 0;
+ 1ea:	10 82       	st	Z, r1
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:166
+     led_color[n * 3] = MAX_BRIGHT * (255 - WheelPos * 3) / 255;
+     led_color[n * 3 + 1] = 0;
+     led_color[n * 3 + 2] = MAX_BRIGHT * (WheelPos * 3) / 255;
+  } 
+  else {
+     WheelPos -= 170;
+ 1ec:	2a 5a       	subi	r18, 0xAA	; 170
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:168
+     led_color[n * 3] = 0;
+     led_color[n * 3 + 1] = MAX_BRIGHT * (WheelPos * 3) / 255;
+ 1ee:	30 e0       	ldi	r19, 0x00	; 0
+ 1f0:	c9 01       	movw	r24, r18
+ 1f2:	6e e1       	ldi	r22, 0x1E	; 30
+ 1f4:	70 e0       	ldi	r23, 0x00	; 0
+ 1f6:	c3 d0       	rcall	.+390    	; 0x37e <__mulhi3>
+ 1f8:	be 01       	movw	r22, r28
+ 1fa:	d2 d0       	rcall	.+420    	; 0x3a0 <__divmodhi4>
+ 1fc:	61 83       	std	Z+1, r22	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:169
+     led_color[n * 3 + 2] = MAX_BRIGHT * (255 - WheelPos * 3) / 255;
+ 1fe:	c9 01       	movw	r24, r18
+ 200:	6d ef       	ldi	r22, 0xFD	; 253
+ 202:	7f ef       	ldi	r23, 0xFF	; 255
+ 204:	bc d0       	rcall	.+376    	; 0x37e <__mulhi3>
+ 206:	81 50       	subi	r24, 0x01	; 1
+ 208:	9f 4f       	sbci	r25, 0xFF	; 255
+ 20a:	6a e0       	ldi	r22, 0x0A	; 10
+ 20c:	70 e0       	ldi	r23, 0x00	; 0
+ 20e:	b7 d0       	rcall	.+366    	; 0x37e <__mulhi3>
+ 210:	be 01       	movw	r22, r28
+ 212:	c6 d0       	rcall	.+396    	; 0x3a0 <__divmodhi4>
+ 214:	62 83       	std	Z+2, r22	; 0x02
+mode_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:102
+        //     set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+        //     break;
+        case 3:
+            for(int i=0; i< NUMLEDS; i++ ){
+                Wheel(color + i*STEP1, i );    
+                color += STEP2;
+ 216:	f3 94       	inc	r15
+ 218:	f3 94       	inc	r15
+ 21a:	f0 92 65 00 	sts	0x0065, r15	; 0x800065 <color>
+ 21e:	8b e0       	ldi	r24, 0x0B	; 11
+ 220:	90 e0       	ldi	r25, 0x00	; 0
+ 222:	06 c0       	rjmp	.+12     	; 0x230 <__SREG__+0x1f1>
+_delay_ms():
+c:\users\beta\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 224:	af e5       	ldi	r26, 0x5F	; 95
+ 226:	b9 e0       	ldi	r27, 0x09	; 9
+ 228:	11 97       	sbiw	r26, 0x01	; 1
+ 22a:	f1 f7       	brne	.-4      	; 0x228 <__SREG__+0x1e9>
+ 22c:	00 c0       	rjmp	.+0      	; 0x22e <__SREG__+0x1ef>
+ 22e:	00 00       	nop
+ 230:	01 97       	sbiw	r24, 0x01	; 1
+delay():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring.c:52
+ *
+ * @param ms The number of milliseconds to pause
+ */
+void delay(uint16_t ms)
+{
+  while(ms--)
+ 232:	c1 f7       	brne	.-16     	; 0x224 <__SREG__+0x1e5>
+ 234:	40 5f       	subi	r20, 0xF0	; 240
+ 236:	33 96       	adiw	r30, 0x03	; 3
+mode_handler():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:100
+            break;
+        // case 3:
+        //     set_full_ws2812(0, MAX_BRIGHT * 0.5, MAX_BRIGHT);
+        //     break;
+        case 3:
+            for(int i=0; i< NUMLEDS; i++ ){
+ 238:	40 38       	cpi	r20, 0x80	; 128
+ 23a:	09 f0       	breq	.+2      	; 0x23e <__SREG__+0x1ff>
+ 23c:	a5 cf       	rjmp	.-182    	; 0x188 <__SREG__+0x149>
+sync_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:58
+        led_color[(i * 3) + 2] = col_b;
+    }
+}
+
+void sync_ws2812() {
+    ws2812b_send_color(STRIP_PIN, led_color[0], led_color[1], led_color[2]);
+ 23e:	40 91 6b 00 	lds	r20, 0x006B	; 0x80006b <led_color+0x2>
+ 242:	60 91 6a 00 	lds	r22, 0x006A	; 0x80006a <led_color+0x1>
+ 246:	80 91 69 00 	lds	r24, 0x0069	; 0x800069 <led_color>
+ws2812b_send_color():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:35
+
+void Wheel(byte WheelPos,uint8_t n);
+void ws2812b_send_color_no_reset(const uint8_t pin_value, const uint8_t red, const uint8_t green, const uint8_t blue);
+
+static void ws2812b_send_color(const uint8_t pin_value, const uint8_t red, const uint8_t green, const uint8_t blue) {
+    DDRB |= pin_value;
+ 24a:	bb 9a       	sbi	0x17, 3	; 23
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:36
+    PORTB &= ~pin_value;
+ 24c:	c3 98       	cbi	0x18, 3	; 24
+_delay_us():
+c:\users\beta\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:276
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 24e:	b0 ea       	ldi	r27, 0xA0	; 160
+ 250:	ba 95       	dec	r27
+ 252:	f1 f7       	brne	.-4      	; 0x250 <__SREG__+0x211>
+ 254:	00 00       	nop
+ws2812b_send_color():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:38
+    _delay_us(50);
+    ws2812b_send_color_no_reset(pin_value, red, green, blue);
+ 256:	1e d0       	rcall	.+60     	; 0x294 <ws2812b_send_color_no_reset(unsigned char, unsigned char, unsigned char, unsigned char) [clone .constprop.1]>
+ 258:	89 e6       	ldi	r24, 0x69	; 105
+ 25a:	e8 2e       	mov	r14, r24
+ 25c:	80 e0       	ldi	r24, 0x00	; 0
+ 25e:	f8 2e       	mov	r15, r24
+sync_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:60
+}
+
+void sync_ws2812() {
+    ws2812b_send_color(STRIP_PIN, led_color[0], led_color[1], led_color[2]);
+    for(uint8_t i=1; i<NUMLEDS; i++) {
+        ws2812b_send_color_no_reset(STRIP_PIN, led_color[i * 3], led_color[(i * 3) + 1], led_color[(i * 3) + 2]);
+ 260:	f7 01       	movw	r30, r14
+ 262:	45 81       	ldd	r20, Z+5	; 0x05
+ 264:	64 81       	ldd	r22, Z+4	; 0x04
+ 266:	83 81       	ldd	r24, Z+3	; 0x03
+ 268:	15 d0       	rcall	.+42     	; 0x294 <ws2812b_send_color_no_reset(unsigned char, unsigned char, unsigned char, unsigned char) [clone .constprop.1]>
+ 26a:	f3 e0       	ldi	r31, 0x03	; 3
+ 26c:	ef 0e       	add	r14, r31
+ 26e:	f1 1c       	adc	r15, r1
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:59
+    }
+}
+
+void sync_ws2812() {
+    ws2812b_send_color(STRIP_PIN, led_color[0], led_color[1], led_color[2]);
+    for(uint8_t i=1; i<NUMLEDS; i++) {
+ 270:	8e e7       	ldi	r24, 0x7E	; 126
+ 272:	e8 16       	cp	r14, r24
+ 274:	80 e0       	ldi	r24, 0x00	; 0
+ 276:	f8 06       	cpc	r15, r24
+ 278:	99 f7       	brne	.-26     	; 0x260 <__SREG__+0x221>
+ 27a:	07 c0       	rjmp	.+14     	; 0x28a <__SREG__+0x24b>
+_delay_ms():
+c:\users\beta\appdata\local\arduino15\packages\arduino\tools\avr-gcc\7.3.0-atmel3.6.1-arduino7\avr\include\util/delay.h:187
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 27c:	af e5       	ldi	r26, 0x5F	; 95
+ 27e:	b9 e0       	ldi	r27, 0x09	; 9
+ 280:	11 97       	sbiw	r26, 0x01	; 1
+ 282:	f1 f7       	brne	.-4      	; 0x280 <__SREG__+0x241>
+ 284:	00 c0       	rjmp	.+0      	; 0x286 <__SREG__+0x247>
+ 286:	00 00       	nop
+ 288:	02 c0       	rjmp	.+4      	; 0x28e <__SREG__+0x24f>
+sync_ws2812():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:59
+ 28a:	85 e6       	ldi	r24, 0x65	; 101
+ 28c:	90 e0       	ldi	r25, 0x00	; 0
+ 28e:	01 97       	sbiw	r24, 0x01	; 1
+delay():
+C:\Users\Beta\AppData\Local\Arduino15\packages\MicroCore\hardware\avr\2.3.0\cores\microcore/wiring.c:52
+ 290:	a9 f7       	brne	.-22     	; 0x27c <__SREG__+0x23d>
+ 292:	df ce       	rjmp	.-578    	; 0x52 <__SREG__+0x13>
+
+00000294 <ws2812b_send_color_no_reset(unsigned char, unsigned char, unsigned char, unsigned char) [clone .constprop.1]>:
+_Z27ws2812b_send_color_no_resethhhh.constprop.1():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:173
+     led_color[n * 3 + 1] = MAX_BRIGHT * (WheelPos * 3) / 255;
+     led_color[n * 3 + 2] = MAX_BRIGHT * (255 - WheelPos * 3) / 255;
+  }
+}
+
+void ws2812b_send_color_no_reset(const uint8_t pin_value, const uint8_t red, const uint8_t green, const uint8_t blue) {
+ 294:	0f 93       	push	r16
+ 296:	1f 93       	push	r17
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:174
+    DDRB |= pin_value;
+ 298:	bb 9a       	sbi	0x17, 3	; 23
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:175
+    const uint8_t portb = PORTB; // PORTB is volatile, so preload value
+ 29a:	98 b3       	in	r25, 0x18	; 24
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:176
+    const uint8_t lo = portb & ~pin_value;
+ 29c:	29 2f       	mov	r18, r25
+ 29e:	27 7f       	andi	r18, 0xF7	; 247
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:177
+    const uint8_t hi = portb | pin_value;
+ 2a0:	98 60       	ori	r25, 0x08	; 8
+
+000002a2 <.green>:
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:325
+                ".end:                          \n\t"
+            
+            : // No outputs
+            : [lo] "r" (lo), [hi] "r" (hi), [green] "r" (green), [red] "r" (red), [blue] "r" (blue)
+            : "r16", "r17"
+    );
+ 2a2:	06 2f       	mov	r16, r22
+ 2a4:	10 e8       	ldi	r17, 0x80	; 128
+ 2a6:	01 23       	and	r16, r17
+ 2a8:	11 f4       	brne	.+4      	; 0x2ae <.green_transmit_one_0>
+ 2aa:	11 c0       	rjmp	.+34     	; 0x2ce <.green_transmit_zero_0>
+
+000002ac <.green_transmit_one_1>:
+	...
+
+000002ae <.green_transmit_one_0>:
+ 2ae:	98 bb       	out	0x18, r25	; 24
+ 2b0:	00 00       	nop
+ 2b2:	16 95       	lsr	r17
+ 2b4:	30 f0       	brcs	.+12     	; 0x2c2 <.green_transmit_one_done>
+ 2b6:	00 c0       	rjmp	.+0      	; 0x2b8 <.green_transmit_one_0+0xa>
+ 2b8:	06 2f       	mov	r16, r22
+ 2ba:	01 23       	and	r16, r17
+ 2bc:	28 bb       	out	0x18, r18	; 24
+ 2be:	b1 f7       	brne	.-20     	; 0x2ac <.green_transmit_one_1>
+ 2c0:	06 c0       	rjmp	.+12     	; 0x2ce <.green_transmit_zero_0>
+
+000002c2 <.green_transmit_one_done>:
+ 2c2:	10 e8       	ldi	r17, 0x80	; 128
+ 2c4:	08 2f       	mov	r16, r24
+ 2c6:	01 23       	and	r16, r17
+ 2c8:	28 bb       	out	0x18, r18	; 24
+ 2ca:	91 f4       	brne	.+36     	; 0x2f0 <.red_transmit_one_1>
+ 2cc:	22 c0       	rjmp	.+68     	; 0x312 <.red_transmit_zero_0>
+
+000002ce <.green_transmit_zero_0>:
+ 2ce:	98 bb       	out	0x18, r25	; 24
+ 2d0:	16 95       	lsr	r17
+ 2d2:	38 f0       	brcs	.+14     	; 0x2e2 <.green_transmit_zero_done>
+ 2d4:	00 00       	nop
+ 2d6:	28 bb       	out	0x18, r18	; 24
+ 2d8:	00 c0       	rjmp	.+0      	; 0x2da <.green_transmit_zero_0+0xc>
+ 2da:	06 2f       	mov	r16, r22
+ 2dc:	01 23       	and	r16, r17
+ 2de:	31 f7       	brne	.-52     	; 0x2ac <.green_transmit_one_1>
+ 2e0:	f6 cf       	rjmp	.-20     	; 0x2ce <.green_transmit_zero_0>
+
+000002e2 <.green_transmit_zero_done>:
+ 2e2:	28 bb       	out	0x18, r18	; 24
+ 2e4:	00 00       	nop
+ 2e6:	10 e8       	ldi	r17, 0x80	; 128
+ 2e8:	08 2f       	mov	r16, r24
+ 2ea:	01 23       	and	r16, r17
+ 2ec:	09 f4       	brne	.+2      	; 0x2f0 <.red_transmit_one_1>
+ 2ee:	11 c0       	rjmp	.+34     	; 0x312 <.red_transmit_zero_0>
+
+000002f0 <.red_transmit_one_1>:
+	...
+
+000002f2 <.red_transmit_one_0>:
+ 2f2:	98 bb       	out	0x18, r25	; 24
+ 2f4:	00 00       	nop
+ 2f6:	16 95       	lsr	r17
+ 2f8:	30 f0       	brcs	.+12     	; 0x306 <.red_transmit_one_done>
+ 2fa:	00 c0       	rjmp	.+0      	; 0x2fc <.red_transmit_one_0+0xa>
+ 2fc:	08 2f       	mov	r16, r24
+ 2fe:	01 23       	and	r16, r17
+ 300:	28 bb       	out	0x18, r18	; 24
+ 302:	b1 f7       	brne	.-20     	; 0x2f0 <.red_transmit_one_1>
+ 304:	06 c0       	rjmp	.+12     	; 0x312 <.red_transmit_zero_0>
+
+00000306 <.red_transmit_one_done>:
+ 306:	10 e8       	ldi	r17, 0x80	; 128
+ 308:	04 2f       	mov	r16, r20
+ 30a:	01 23       	and	r16, r17
+ 30c:	28 bb       	out	0x18, r18	; 24
+ 30e:	91 f4       	brne	.+36     	; 0x334 <.blue_transmit_one_1>
+ 310:	1d c0       	rjmp	.+58     	; 0x34c <.blue_transmit_zero_0>
+
+00000312 <.red_transmit_zero_0>:
+ 312:	98 bb       	out	0x18, r25	; 24
+ 314:	16 95       	lsr	r17
+ 316:	38 f0       	brcs	.+14     	; 0x326 <.red_transmit_zero_done>
+ 318:	00 00       	nop
+ 31a:	28 bb       	out	0x18, r18	; 24
+ 31c:	00 c0       	rjmp	.+0      	; 0x31e <.red_transmit_zero_0+0xc>
+ 31e:	08 2f       	mov	r16, r24
+ 320:	01 23       	and	r16, r17
+ 322:	31 f7       	brne	.-52     	; 0x2f0 <.red_transmit_one_1>
+ 324:	f6 cf       	rjmp	.-20     	; 0x312 <.red_transmit_zero_0>
+
+00000326 <.red_transmit_zero_done>:
+ 326:	28 bb       	out	0x18, r18	; 24
+ 328:	00 00       	nop
+ 32a:	10 e8       	ldi	r17, 0x80	; 128
+ 32c:	04 2f       	mov	r16, r20
+ 32e:	01 23       	and	r16, r17
+ 330:	09 f4       	brne	.+2      	; 0x334 <.blue_transmit_one_1>
+ 332:	0c c0       	rjmp	.+24     	; 0x34c <.blue_transmit_zero_0>
+
+00000334 <.blue_transmit_one_1>:
+	...
+
+00000336 <.blue_transmit_one_0>:
+ 336:	98 bb       	out	0x18, r25	; 24
+ 338:	00 c0       	rjmp	.+0      	; 0x33a <.blue_transmit_one_0+0x4>
+ 33a:	16 95       	lsr	r17
+ 33c:	30 f0       	brcs	.+12     	; 0x34a <.blue_transmit_one_done>
+ 33e:	00 00       	nop
+ 340:	04 2f       	mov	r16, r20
+ 342:	01 23       	and	r16, r17
+ 344:	28 bb       	out	0x18, r18	; 24
+ 346:	b1 f7       	brne	.-20     	; 0x334 <.blue_transmit_one_1>
+ 348:	01 c0       	rjmp	.+2      	; 0x34c <.blue_transmit_zero_0>
+
+0000034a <.blue_transmit_one_done>:
+ 34a:	0a c0       	rjmp	.+20     	; 0x360 <.blue_transmit_zero_done>
+
+0000034c <.blue_transmit_zero_0>:
+ 34c:	98 bb       	out	0x18, r25	; 24
+ 34e:	16 95       	lsr	r17
+ 350:	38 f0       	brcs	.+14     	; 0x360 <.blue_transmit_zero_done>
+ 352:	00 00       	nop
+ 354:	28 bb       	out	0x18, r18	; 24
+ 356:	00 c0       	rjmp	.+0      	; 0x358 <.blue_transmit_zero_0+0xc>
+ 358:	04 2f       	mov	r16, r20
+ 35a:	01 23       	and	r16, r17
+ 35c:	59 f7       	brne	.-42     	; 0x334 <.blue_transmit_one_1>
+ 35e:	f6 cf       	rjmp	.-20     	; 0x34c <.blue_transmit_zero_0>
+
+00000360 <.blue_transmit_zero_done>:
+ 360:	28 bb       	out	0x18, r18	; 24
+
+00000362 <.end>:
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:326
+}
+ 362:	1f 91       	pop	r17
+ 364:	0f 91       	pop	r16
+ 366:	08 95       	ret
+
+00000368 <set_full_ws2812(unsigned char, unsigned char, unsigned char)>:
+_Z15set_full_ws2812hhh():
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:49
+        led_color[(position * 3) + 1] = col_g;
+        led_color[(position * 3) + 2] = col_b;
+  }
+}
+
+void set_full_ws2812(uint8_t col_r, uint8_t col_g, uint8_t col_b) {
+ 368:	e9 e6       	ldi	r30, 0x69	; 105
+ 36a:	f0 e0       	ldi	r31, 0x00	; 0
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:51
+    for(uint8_t i=0; i < NUMLEDS; i++) {
+        led_color[i * 3] = col_r;
+ 36c:	80 83       	st	Z, r24
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:52
+        led_color[(i * 3) + 1] = col_g;
+ 36e:	61 83       	std	Z+1, r22	; 0x01
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:53
+        led_color[(i * 3) + 2] = col_b;
+ 370:	42 83       	std	Z+2, r20	; 0x02
+ 372:	33 96       	adiw	r30, 0x03	; 3
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:50
+        led_color[(position * 3) + 2] = col_b;
+  }
+}
+
+void set_full_ws2812(uint8_t col_r, uint8_t col_g, uint8_t col_b) {
+    for(uint8_t i=0; i < NUMLEDS; i++) {
+ 374:	90 e0       	ldi	r25, 0x00	; 0
+ 376:	e1 38       	cpi	r30, 0x81	; 129
+ 378:	f9 07       	cpc	r31, r25
+ 37a:	c1 f7       	brne	.-16     	; 0x36c <set_full_ws2812(unsigned char, unsigned char, unsigned char)+0x4>
+C:\Users\Beta\Desktop\Rosatom_badge_AS2023\firmware\Tiny13_Rosatom_Badge/Tiny13_Rosatom_Badge.ino:55
+        led_color[i * 3] = col_r;
+        led_color[(i * 3) + 1] = col_g;
+        led_color[(i * 3) + 2] = col_b;
+    }
+}
+ 37c:	08 95       	ret
+
+0000037e <__mulhi3>:
+__mulhi3():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:312
+ 37e:	00 24       	eor	r0, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:313
+ 380:	55 27       	eor	r21, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:314
+ 382:	04 c0       	rjmp	.+8      	; 0x38c <__mulhi3+0xe>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:317
+ 384:	08 0e       	add	r0, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:318
+ 386:	59 1f       	adc	r21, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:320
+ 388:	88 0f       	add	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:321
+ 38a:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:324
+ 38c:	00 97       	sbiw	r24, 0x00	; 0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:325
+ 38e:	29 f0       	breq	.+10     	; 0x39a <__mulhi3+0x1c>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:328
+ 390:	76 95       	lsr	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:329
+ 392:	67 95       	ror	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:331
+ 394:	b8 f3       	brcs	.-18     	; 0x384 <__mulhi3+0x6>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:335
+ 396:	71 05       	cpc	r23, r1
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:337
+ 398:	b9 f7       	brne	.-18     	; 0x388 <__mulhi3+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:340
+ 39a:	80 2d       	mov	r24, r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:341
+ 39c:	95 2f       	mov	r25, r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:342
+ 39e:	08 95       	ret
+
+000003a0 <__divmodhi4>:
+__divmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1440
+ 3a0:	97 fb       	bst	r25, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1441
+ 3a2:	07 2e       	mov	r0, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1442
+ 3a4:	16 f4       	brtc	.+4      	; 0x3aa <__divmodhi4+0xa>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1443
+ 3a6:	00 94       	com	r0
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1444
+ 3a8:	06 d0       	rcall	.+12     	; 0x3b6 <__divmodhi4_neg1>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1446
+ 3aa:	77 fd       	sbrc	r23, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1447
+ 3ac:	08 d0       	rcall	.+16     	; 0x3be <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1448
+ 3ae:	0b d0       	rcall	.+22     	; 0x3c6 <__udivmodhi4>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1449
+ 3b0:	07 fc       	sbrc	r0, 7
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1450
+ 3b2:	05 d0       	rcall	.+10     	; 0x3be <__divmodhi4_neg2>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1451
+ 3b4:	3e f4       	brtc	.+14     	; 0x3c4 <__divmodhi4_exit>
+
+000003b6 <__divmodhi4_neg1>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1454
+ 3b6:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1455
+ 3b8:	81 95       	neg	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1456
+ 3ba:	9f 4f       	sbci	r25, 0xFF	; 255
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1457
+ 3bc:	08 95       	ret
+
+000003be <__divmodhi4_neg2>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1460
+ 3be:	70 95       	com	r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1461
+ 3c0:	61 95       	neg	r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1462
+ 3c2:	7f 4f       	sbci	r23, 0xFF	; 255
+
+000003c4 <__divmodhi4_exit>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1464
+ 3c4:	08 95       	ret
+
+000003c6 <__udivmodhi4>:
+__udivmodhi4():
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1408
+ 3c6:	aa 1b       	sub	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1409
+ 3c8:	bb 1b       	sub	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1410
+ 3ca:	51 e1       	ldi	r21, 0x11	; 17
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1411
+ 3cc:	07 c0       	rjmp	.+14     	; 0x3dc <__udivmodhi4_ep>
+
+000003ce <__udivmodhi4_loop>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1413
+ 3ce:	aa 1f       	adc	r26, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1414
+ 3d0:	bb 1f       	adc	r27, r27
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1415
+ 3d2:	a6 17       	cp	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1416
+ 3d4:	b7 07       	cpc	r27, r23
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1417
+ 3d6:	10 f0       	brcs	.+4      	; 0x3dc <__udivmodhi4_ep>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1418
+ 3d8:	a6 1b       	sub	r26, r22
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1419
+ 3da:	b7 0b       	sbc	r27, r23
+
+000003dc <__udivmodhi4_ep>:
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1421
+ 3dc:	88 1f       	adc	r24, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1422
+ 3de:	99 1f       	adc	r25, r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1423
+ 3e0:	5a 95       	dec	r21
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1424
+ 3e2:	a9 f7       	brne	.-22     	; 0x3ce <__udivmodhi4_loop>
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1425
+ 3e4:	80 95       	com	r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1426
+ 3e6:	90 95       	com	r25
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1428
+ 3e8:	bc 01       	movw	r22, r24
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1430
+ 3ea:	cd 01       	movw	r24, r26
+/home/jenkins-mingw32/workspace/avr-gcc-staging/label/Ubuntu14.04x64-mingw32/gcc-build/avr/avr25/tiny-stack/libgcc/../../../../../gcc/libgcc/config/avr/lib1funcs.S:1432
+ 3ec:	08 95       	ret
