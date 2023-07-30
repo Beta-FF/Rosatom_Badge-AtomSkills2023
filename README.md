@@ -3,8 +3,8 @@
 [Ссылка на проект EasyEDA](https://oshwlab.com/treegervd/rosatom_badge_edapro)
 
 Использованные библиотеки:
-[MicroCore](https://github.com/MCUdude/MicroCore) ([MCUdude](https://github.com/MCUdude))
-[ws2812b_attiny13](https://github.com/dsprenkels/ws2812b_attiny13) ([dsprenkels](https://github.com/dsprenkels))
+* [MicroCore](https://github.com/MCUdude/MicroCore) ([MCUdude](https://github.com/MCUdude))
+* [ws2812b_attiny13](https://github.com/dsprenkels/ws2812b_attiny13) ([dsprenkels](https://github.com/dsprenkels))
 ![pic](PCB_Rosatom_Badge_low.png)
 
 ## Подготовка
@@ -29,6 +29,7 @@ EEPROM: __EEPROM retained__
 * Значек не выключается при уровне BOD менее 2.7V. Связано с ошибкой в схеме самоблокировки питания. В выключенном состоянии на затворе Q1 присутствует напряжение ~1.7V, чего хватает для частичного открытия ключа.
 Для исправления нужно добавить еще один N-ch MOSFET или биполярный NPN от затвора Q1 на GND.
 Исправленная схема:
+
 ![pic](fix_power_bug.jpg)
 * В редких случаях при установке батареи все светодиоды загораются ярким красным светом. Точная причина не опеределена. Возможно, поможет резистор на 100-500 Ом в разрыв цепи U4_PB3 - LED1_DIN.
 Лечится извлечением и повторной установкой батареи.
