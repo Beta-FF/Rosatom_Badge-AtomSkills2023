@@ -6,15 +6,16 @@
 Использованные библиотеки:
 * [MicroCore](https://github.com/MCUdude/MicroCore) ([MCUdude](https://github.com/MCUdude))
 * [ws2812b_attiny13](https://github.com/dsprenkels/ws2812b_attiny13) ([dsprenkels](https://github.com/dsprenkels))
+
 ![pic](PCB_Rosatom_Badge_low.png)
 
 ## Подготовка
 * Установить среду [Arduino IDE](https://www.arduino.cc/en/software) и ядро [MicroCore](https://github.com/MCUdude/MicroCore)
 * Выбрать в настройках проекта:
-BOD: __BOD 2.7V__
-Bootloader: __No bootloader__
-Clock: __9.6 Mhz internal osc.__
-EEPROM: __EEPROM retained__
+    * BOD: __BOD 2.7V__
+    * Bootloader: __No bootloader__
+    * Clock: __9.6 Mhz internal osc.__
+    * EEPROM: __EEPROM retained__
 * Если МК новый, то первую прошивку загружать на __slow__ скорости, например __USBasp slow__ (в зависимости от программатора). Дальнейшие загрузки возможны на нормальной скорости (__USBasp__).
 
 ## Функционал
